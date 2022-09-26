@@ -1,0 +1,41 @@
+{
+
+	"products": [
+		{
+			"id": 1,
+			"name": "Hamburger",
+			"amount": 2200,
+			"quantity": 1
+		},
+		{
+			"id": 2,
+			"name": "Batata",
+			"amount": 1555,
+			"quantity": 1
+		},
+		{
+			"id": 3,
+			"name": "Porção de frango",
+			"amount": 2500,
+			"quantity": 1
+		},
+		{
+			"id": 4,
+			"name": "Porção Mista",
+			"amount": 3500,
+			"quantity": 1
+		},
+		{
+			"id": 5,
+			"name": "Coca",
+			"amount": 3555,
+			"quantity": 1
+		},
+		{
+			"id": 6,
+			"name": "Água",
+			"amount": 250,
+			"quantity": 1
+		}
+	]
+}
