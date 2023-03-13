@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Setting the pages character encoding -->
 	<meta charset="UTF-8">
-
-	<!-- The meta viewport will scale my content to any device width -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.card {
+			background-color: blue;
+			color: aliceblue;
+			padding: 10px;
+			margin: 15px;
+			border-radius: 10px;
+			transition: all 0.2s;
+		}
 
+		.card:hover {
+			background-color: green;
+		}
+	</style>
 	<title>Products</title>
 </head>
 <body>
+	<h1>Produtos</h1>
+	<div class="products_list"></div>
 
-
-	<script src="./script.js"></script> <!-- Link to the javascript file -->
+	<h2>Carrinho</h2>
+	<div class="cart_list"></div>
+	<script src="./script.js"></script>
 </body>
 </html>
