@@ -16,15 +16,53 @@
 		.card:hover {
 			background-color: green;
 		}
+
+		.row {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#cart {
+			width: 250px;
+			background-color: aqua;
+			position: fixed;
+			right: 0px;
+			top: 0px;
+			height: 100%;
+
+			overflow: hidden;  /* Hide the element content, while height = 0 */
+			height: 0;
+			opacity: 0;
+			transition: height 0ms 400ms, opacity 400ms 0ms;
+		}
+
+		#cart.visible {
+			height: 100%;
+			opacity: 1;
+		    transition: height 0ms 0ms, opacity 400ms 0ms;
+		}
+
+		#openCartBtn {
+			position: fixed;
+			right: 0px;
+			top: 0px;
+		}
 	</style>
 	<title>Products</title>
 </head>
-<body>
-	<h1>Produtos</h1>
-	<div class="products_list"></div>
+<body class="row">
+	<div class="products">
+		<h1>Produtos</h1>
+		<div class="products_list"></div>
+	</div>
 
-	<h2>Carrinho</h2>
-	<div class="cart_list"></div>
-	<script src="./script.js"></script>
+	<button onclick="openCart()" id="openCartBtn">Abrir</button>
+
+	<div id="cart">
+		<button onclick="closeCart()">X</button>
+		<h2>Carrinho</h2>
+		<div class="cart_list"></div>
+		<script src="./script.js"></script>
+	</div>
 </body>
 </html>

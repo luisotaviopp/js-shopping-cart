@@ -1,11 +1,3 @@
-fetch("users.php",  {
-	method: 'GET',
-	mode: 'no-cors'
-})
-.then(res => res.json())
-.then(data => console.table(data));
-
-
 let cart_list_html = document.getElementsByClassName("cart_list")[0];
 let product_list_html = document.getElementsByClassName("products_list")[0];
 
@@ -138,3 +130,16 @@ function getTotal(){
 }
 
 getTotal();
+
+
+
+
+
+
+function closeCart() {
+	document.getElementById('cart').className = "";
+}
+
+function openCart() {
+	document.getElementById('cart').className += "visible";
+}
